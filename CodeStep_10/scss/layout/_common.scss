@@ -1,0 +1,58 @@
+@mixin bg($img) {
+  background-image: url($img);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  // 縦書きの指定(各ブラウザに対応するための)
+  // ベンダープレフィックスを設定
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;  //Chrome Safari用 
+  -moz-writing-mode: vertical-rl;     //firefox用 
+  -ms-writing-mode: tb-rl;     //IE用
+}
+
+h1 {
+  line-height: 1px;
+  margin-left: 6vw;
+
+  a {
+    display: block;
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.inner {
+  padding: 0 2vw;
+  margin-bottom: 18vw;
+}
+
+.ttl {
+  font-weight: normal;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+
+  &_ja {
+    font-size: 2.25rem;
+    display: block;
+  }
+
+  &_en {
+    font-size: 0.875rem;
+    margin-left: 1.5vw;
+    display: block;
+  }
+}
+
+#map {
+  iframe {
+    width: 100%;
+    vertical-align: bottom;
+    filter:grayscale(100%);
+  }
+}

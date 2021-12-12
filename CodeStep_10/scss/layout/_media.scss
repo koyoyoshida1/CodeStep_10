@@ -1,0 +1,105 @@
+@media screen and (max-width: 768px) {
+  .inner {
+    max-width: 100%;
+  }
+
+  header {
+    /* スマホの場合は背景画像を切り替える */
+    background-image: url(../img/mainvisual-sp.jpg);
+    padding: 2vw;
+    margin-bottom: 8vh;
+  }
+
+  #news {
+    margin-bottom: 8vh;
+
+    .ja {
+      font-size: 1.75rem;
+    }
+
+    dl {
+      padding: 2vh 3vw 0 0;
+      
+      dt {
+        padding: 1.5vh 1.2vw 1.5vh 0.5vw;
+
+        // スマホの場合は4つ目以降は非表示にする
+        &:nth-of-type( n + 4) {
+          display: none;
+        }
+      }
+
+      dd {
+        padding: 1.5vh 0 1.5vh 1.2vw;
+
+        &:nth-of-type(3) {
+          border-left: solid 1px $black;
+        }
+
+        &:nth-of-type(n + 4) {
+           display: none;
+        }
+      }
+    }
+  }
+
+  #about, #about1 {
+    margin-bottom: 8vh;
+
+
+    .ttl{ 
+      &_ja {
+        font-size: 1.5rem;
+        // スマホの場合は英語を非表示
+      }
+      
+      &_en {
+        display: none;
+      }
+    }
+
+    .img {
+      width: 90%;
+      margin-top: 7vh;
+
+      .txt {
+        width: 64%;
+        font-size: 0.875rem;
+        padding: 3vh 0;
+      }
+    }
+  }
+
+  #about {
+    .ttl {
+      margin-left: 1vw;
+    }
+  }
+
+  #about1 {
+    .ttl {
+      margin-right: 1vw;
+    }
+  }
+
+  #footer {
+    padding: 4vh 2vw 3vh 2vw;
+
+    .item {
+      h1 {
+        margin-left: 2.5rem;
+      }
+
+      &_r {
+        ul {
+          font-size: 0.875rem;
+          margin-right: 2.5rem;
+          
+          li {
+            margin-left: 1vw;
+          }
+        }
+      }
+    }
+  }
+}

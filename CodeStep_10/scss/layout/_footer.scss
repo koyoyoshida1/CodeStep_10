@@ -1,0 +1,47 @@
+footer {
+  background-color: $black;
+  color: $white;
+  padding: 10vh 3.5vw 2%;
+
+
+  .footer_item {
+    width: 100%;
+    display: flex;
+    font-size: 0.875rem;
+    justify-content: space-between;
+    flex-direction:row-reverse;
+
+    p {
+      line-height: 2;
+    }
+
+    &_r, &_l {
+      writing-mode: vertical-rl;
+      -webkit-writing-mode: vertical-rl;
+      -moz-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+    }
+
+    &_r{
+      margin-right: 5%;
+
+      h1 {
+        margin-left: 8vw;
+      }
+
+      ul {
+        margin-right: 8vw;
+
+        li {
+          font-size: 1rem;
+          margin-left: 2.5vw;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 0.675rem;
+  } 
+}

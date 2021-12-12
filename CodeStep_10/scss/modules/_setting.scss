@@ -1,0 +1,23 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $gray;
+  color: $black;
+  font-family: "Noto Serif", serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
